@@ -1,0 +1,207 @@
+.dashHead {
+    background-color: #CFD0F4;
+  }
+  
+  .dashHead > h1 {
+    padding: 1rem;
+    margin: 0;
+  }
+  
+  .dashHead > a {
+    position: absolute;
+    padding: 1rem;
+    right: 1%;
+    top: 1%;
+  }
+  
+  .dashHead > a > img {
+    height: 50px;
+    width: 50px;
+  }
+  .dashHead > a:hover {
+    background-color: #a4a7ff;
+  }
+  
+  .dashBody {
+    margin: 0;
+    padding-bottom: 2rem;
+    background-color: #eef;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .dashItem {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-gap: 1rem;
+    background-color: #FFE7E7;
+    margin: 1rem auto;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    width: 50%;
+    padding: 2rem;
+  }
+  
+  .adminForm {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    margin: 2rem auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    z-index: 2;
+    box-shadow: 5px 5px 20px #888888;
+  }
+  
+  .showConfDel {
+    position: fixed;
+    font-family: 'Poppins', sans-serif;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    margin: 2rem auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    z-index: 2;
+    box-shadow: 5px 5px 20px #888888;
+  }
+  
+  .confDelBtns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+  
+  .confDelBtns > button {
+    margin: 0;
+  }
+  
+  .showItemUpdate {
+    position: fixed;
+    background-color: wheat;
+    font-family: 'Poppins', sans-serif;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    animation: showItemUpdate 1.5s ease;
+  }
+  
+  @keyframes showItemUpdate {
+    0% {
+      opacity: 0;
+      top: 0%;
+      left: 50%;
+    }
+    50% {
+      opacity: 1;
+      top: 3%;
+      left: 50%;
+    }
+    100% {
+      opacity: 0;
+      top: 0%;
+      left: 50%;
+    }
+  }
+  
+  .addNew {
+    background-color: #6CFBCE;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    margin: 1rem;
+  }
+  
+  .addNew:hover {
+    background-color: #20c591;
+  }
+  
+  .dashItemBtns {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dashItemBtns > button {
+    margin: 1rem 0;
+    background-color: #fff;
+    outline: none;
+    border: none;
+  }
+  
+  .dashItemBtns > button:hover {
+    background-color: #F2CCAC;
+  }
+  
+  .dashItemBtns > button > img {
+    width: 20px;
+    height: 20px;
+    padding: 0.5rem 0;
+  }
+  
+  .hideForm {
+    display: none;
+  }
+  
+  .closeForm {
+    float: right;
+    margin-right: 1rem;
+    padding: 1rem;
+    border: none;
+    background-color: transparent;
+    outline: none;
+  }
+  
+  .closeForm > img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .closeForm:hover {
+    border-radius: 50%;
+    background-color: #cfd1ff;
+    padding: 1rem;
+  }
+  
+  .submitNew {
+    margin: 2rem 0 0 0;
+  }
+  
+  .submitNew > input {
+    background-color: #cfd1ff;
+    border: none;
+    outline: none;
+    padding: 1rem 2rem;
+    font-family: monospace;
+  }
+  
+  .submitNew > input:hover {
+    background-color: rgb(120, 120, 255);
+  }
+  
+  @media (max-width: 500px) {
+    .dashItem {
+      display: grid;
+      grid-template-columns: none;
+      grid-template-rows: 1fr 0.5fr;
+      width: 60%;
+    }
+  }
+  @media (max-width: 400px) {
+    .dashHead > h1 {
+      font-size: 1.5rem;
+      padding: 0.5rem;
+    }
+    .dashItem {
+      width: 75%;
+      padding: 1rem;
+    }
+    .addNew {
+      margin: 0.5rem;
+    }
+  }

@@ -1,0 +1,93 @@
+.image {
+    display: block;
+    height: 125px;
+    width: 125px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+  }
+  
+  .productImg :hover{
+    transform: scale(1.2) rotate(25deg);
+  }
+  
+  .productSm {
+    font-family: 'Poppins',sans-serif;
+    transition: all 1s ease;
+    background-color: #FFDF8D;
+  }
+  
+  .productSmCompany {
+    font-size: 1.25rem;
+  }
+  
+  .productSmName {
+    font-size: 1rem;
+  }
+  
+  .product {
+    margin: 1rem;
+  }
+  
+  .product > p {
+    margin: 0.5rem 0 0 0.5rem;
+  }
+  /* for 4K */
+  @media (min-width: 3100px) {
+    .productSmCompany {
+      font-size: 3rem;
+    }
+    .productSmName {
+      font-size: 1.75rem;
+    }
+    .image {
+      width: 350px;
+      height: 350px;
+    }
+  }
+  
+  @media (max-width: 2600px) and (min-width: 2000px) {
+    .productSmCompany {
+      font-size: 1.5rem;
+    }
+    .productSmName {
+      font-size: 1rem;
+    }
+    .image {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  @media(max-width: 1450px) {
+    .productSmCompany {
+      font-size: 1rem;
+    }
+    .productSmName {
+      font-size: 0.75rem;
+    }
+    .image {
+      width: 125px;
+      height: 125px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .product {
+      margin: 0.5rem;
+    }
+    .productSmName {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 380px) {
+    .product {
+      margin: 0;
+    }
+    .image {  
+      width: 100px;
+      height: 100px;
+    }
+    .productSmName {
+      font-size: 0.75rem;
+    }
+  }

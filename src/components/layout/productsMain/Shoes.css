@@ -1,0 +1,57 @@
+.shoes {
+    width: 92vw;
+    float: right;
+  }
+  
+  .productsTitle {
+    margin: 2rem 6rem;
+    font-size: 3rem;
+    font-family: 'Archivo',sans-serif;
+  }
+  
+  .showLoginErr {
+    position: fixed;
+    top: 3%;
+    right: 3%;
+    animation: LoginError 3s ease;
+    padding: 1rem;
+    margin: 0;
+    background-color: wheat;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    z-index: 3;
+  }
+  
+  .hideLoginErr {
+    display: none;
+  }
+  
+  @keyframes LoginError {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @media (max-width: 1150px) {
+    .shoesDiv {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .shoes {
+      margin: 0;
+      padding: 4rem;
+      width: 100vw;
+      float: none;
+    }
+    .productsTitle {
+      margin: 2rem 0;
+      font-size: 2rem;
+    }
+  }

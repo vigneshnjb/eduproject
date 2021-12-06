@@ -1,0 +1,298 @@
+html, body {
+    position: absolute;
+    margin: 0;  
+    height: 100%;
+    width: 100%;
+    /* overflow: hidden; */
+  }
+  .home {
+    width: 92vw;
+    float: right;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  
+  .group-1 {
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+  }
+  
+  .group-2 { 
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  
+  .branding {
+    background-color: #B8FFDC;
+  }
+  
+  .brandName {
+    font-size: 15rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    line-height: 10rem;
+    margin-left: 7.5rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    border-right: 20px solid #81C6A5;
+  }
+  .branding :nth-child(2) {
+    font-weight: 400;
+    font-family: monospace,sans-serif;
+    font-size: 1.1rem;
+    margin-left: 8rem;
+  }
+  
+  .products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  
+  .firstProduct{
+    background-color: #FFDF8D;
+  }
+  .secondProduct {
+    background-color: #FFD2BD;
+  }
+  .thirdProduct {
+    background-color: #00C6CF;
+  }
+  .fourthProduct {
+    background-color: #FFD3E3;
+  }
+  
+  .viewProducts {
+    background-color: #C5F9EE;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .viewProducts > div {
+    margin-left: 8rem;
+  }
+  
+  .viewProducts > div > p {
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: underline;
+  } 
+  
+  .productsBtn {
+    display: block;
+    height: 60px;
+    width: 150px;
+    float: right;
+    margin-right: 10rem;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    line-height: 60px;
+    font-weight: 800;
+    font-size: 1.1rem;
+    background-color: #99DBE3;
+    border: 2px solid black;
+    transition: all 1s;
+  }
+  
+  .productsBtn:hover {
+    cursor: pointer;
+    box-shadow: black;
+  }
+  
+  .shoeGif {
+    background-color: #E8F3F1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .gif {
+    height: 150px;
+    width: 150px;
+  }
+  
+  /* for 4K */
+  @media (min-width: 3100px) {    
+    .branding > div > p {
+      font-size: 3rem;
+    }
+    .brandName {
+      font-size: 32rem;
+      line-height: 27rem;
+    }
+    .viewProducts > div > p {
+      font-size: 4rem;
+    }
+    .productsBtn {
+      width: 500px;
+      height: 150px;
+      font-size: 3rem;
+      line-height: 150px;
+    }
+  }
+  
+  /* for 1440p */
+  @media(max-width: 2600px) and (min-width: 2000px) {
+    .branding > div > p {
+      font-size: 3rem;
+    }
+    .brandName {
+      font-size: 15rem;
+      line-height: 10rem;
+    }
+    .viewProducts > div > p {
+      font-size: 2rem;
+    }
+    .productsBtn {
+      width: 250px;
+      height: 100px;
+      font-size: 2rem;
+      line-height: 100px;
+    }
+  }
+  @media(max-width: 1450px) {
+    .brandName {
+      font-size: 10rem;
+      line-height: 7rem;
+    }
+    .group-1 {
+      grid-template-rows: 2fr 1fr;
+    }
+    .viewProducts > div > p {
+      font-size: 2rem;
+    }
+    .productsBtn {
+      width: 125px;
+      height: 50px;
+      font-size: 1rem;
+      line-height: 50px;
+    }
+  }
+  
+  @media (max-width: 1150px) {
+    .home {
+      display: block;
+      float: bottom;
+      width: 100%;
+      padding-top: 10vh; 
+    }
+  
+    .brandName {
+      padding: 10vh 0 0 1rem;
+      margin: 0;
+    }
+  
+    .group-1 {
+      display: block;
+    }
+  
+    .branding {
+      display: block;
+    }
+  
+    .branding div:nth-child(2) {
+      margin: 0;
+    }
+  
+    .branding > div > p {
+      padding: 2rem;
+      margin: 0;
+    }
+  
+    .viewProducts {
+      height: 25vh;
+    }
+  
+    .viewProducts > div {
+      margin: 0;
+      padding: 2rem;
+    }
+    
+    .viewProducts > div > p {
+      margin: 0;
+    }
+  
+    .productsBtn {
+      float: right;
+      margin: 1rem;
+    }
+  
+    .group-2 {
+      display: block;
+    }
+  
+    .products {
+      width: 100%;
+    }
+  
+    .something {
+      height: 25vh;
+    }
+  }
+  
+  @media (max-width: 740px) {
+    .brandName {
+      font-size: 10rem;
+      line-height: 7rem;
+    }
+    .productsBtn {
+      width: 125px;
+      height: 60px;
+      line-height: 60px;
+      margin: 0.5rem;
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .brandName {
+      font-size: 7rem;
+      line-height: 5rem;
+    }
+    .viewProducts > div > p {
+      font-size: 1.5rem;
+    }
+    .productsBtn {
+      width: 100px;
+      height: 50px;
+      line-height: 50px;
+      margin: 0.5rem;
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .brandName {
+      font-size: 5rem;
+      line-height: 3rem;
+    }
+  
+    .viewProducts {
+      width: 100vw;
+    }
+  
+    .viewProducts > div > p {
+      font-size: 1rem;
+    }
+  
+    .image {
+      width: 100px;
+      height: 100px;
+    }
+    .product {
+      margin: 0;
+      padding: 0.25rem;
+    }
+    .productsBtn {
+      width: 80px;
+      height: 30px;
+      line-height: 30px;
+      margin: 0.5rem;
+      font-size: 0.5rem;
+    }
+  
+    .viewProducts > div > p {
+      font-size: 1.25rem;
+    }
+  } 
